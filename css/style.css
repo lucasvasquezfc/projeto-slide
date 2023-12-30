@@ -48,3 +48,23 @@ img {
 /* .slide {
     transform: translate3d(-20px, 0, 0);
 } */
+
+[data-control="slide"] {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+[data-control="slide"] li a{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #FB5;
+    border-radius: 50%;
+    overflow: hidden;
+    text-indent: -999px;
+}
+[data-control="slide"] li.active a, [data-control="slide"] li a:hover {
+    background: #E54;
+}
